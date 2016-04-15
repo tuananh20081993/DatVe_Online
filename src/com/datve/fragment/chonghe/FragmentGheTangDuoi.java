@@ -138,6 +138,7 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 							ignore = i+1;
 						}
 					}
+	
 				}
 			}
 		} catch (JSONException e) {
