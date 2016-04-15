@@ -32,7 +32,7 @@ public class FragmentChonGhe extends Fragment{
 		fragmentTabHost=(FragmentTabHost) rootView.findViewById(R.id.tabhost);
 		fragmentTabHost.setup(getActivity(), getChildFragmentManager(), R.id.tabFrameLayout);
 		fragmentTabHost.addTab(fragmentTabHost.newTabSpec("Ghế Tầng Dưới").setIndicator("Ghế Tầng Dưới"),FragmentGheTangDuoi.class,null);
-		fragmentTabHost.addTab(fragmentTabHost.newTabSpec("Ghế Tầng Trên").setIndicator("Ghế Tầng Trên"),FragmentGheTangtren.class,null);
+		fragmentTabHost.addTab(fragmentTabHost.newTabSpec("Ghế Tầng Trên").setIndicator("Ghế Tầng Trên"),FragmentGheTangTren.class,null);
 
 		return fragmentTabHost;
 

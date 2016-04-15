@@ -75,9 +75,11 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 		}	
 		JSONArray getseatarray = new JSONArray();
 		ArrayList<ChonGheObject> listseat = new ArrayList<ChonGheObject>();
+		ArrayList<ChonGheObject> listseattangtren = new ArrayList<ChonGheObject>();
 		String GetApiSeat = " ";
 		int count = 0;
 		int row = 0;
+		int five = 0;
 		try {
 			GetApiSeat = ConnectGetSeat(jsontuyen.getString("Id"),jsondate.getString("DepartureDate"),jsontime.getString("Time"),jsontime.getString("Kind"),jsontime.getString("Id"));
 			Log.d("du lieu day nay", GetApiSeat);
@@ -94,30 +96,53 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 			}
 			boolean isTwo = !jsontime.getString("Kind").equalsIgnoreCase("Ghế");
 			int ignore = (isTwo)?1:2;
-			Log.d("IGNORE", ignore+"");
+
+			boolean isFive = false;
+			
 			int getItem = 0;
 			for (int i = 0; i < row*5; i++) {
-				if(!isTwo){
-					//TODO for one floor
-					chonghe = new ChonGheObject(getseatarray.getJSONObject(getItem));
-					if(i == 2 || i ==3)
-					Log.d("ITEM_2_3", getseatarray.getJSONObject(getItem).toString());
-					Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list: "+listseat.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
-					listseat.add(chonghe);
-					if(i != ignore && i < getseatarray.length()-1){
-						//listseat.add(chonghe);
-						getItem++;
-						
-					}else{
-						if(i>=2)
-							ignore+=5;
-					}
-					
-					
-					
-				}else{
 
+				//TODO for one floor
+				chonghe = new ChonGheObject(getseatarray.getJSONObject(getItem));
+				if(i == 2 || i ==3)
+					Log.d("ITEM_2_3", getseatarray.getJSONObject(getItem).toString());
+				Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list: "+listseat.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
+				if (chonghe.getFloorno().equals("1"))
+				{
+					listseat.add(chonghe);
+
+				}else{
+					listseattangtren.add(chonghe);
 				}
+				if((i != ignore || i >= row*5 -5) && getItem < getseatarray.length()-1){
+					//listseat.add(chonghe);
+					if(i>=row*5-5){
+						if(chonghe.getRowno().equalsIgnoreCase(row+"")){
+							five++;
+						}
+					}
+					getItem++;
+					if(isTwo){
+						if(i % 5 == 0 || (i -2)%5 ==0){
+							Log.d("tangne","I "+i);
+							ignore = i+1;
+						}
+					}
+				}else{
+					if(i>=2 && !isTwo){
+						ignore+=5;						
+					}else{
+						Log.d("Ine", " I "+i+"");
+						if(i % 5 == 0 || (i -2)%5 ==0){
+							Log.d("tangne","I "+i);
+							ignore = i+1;
+						}
+					}
+				}
+
+
+
+
 			}
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
@@ -125,12 +150,12 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 		}
 
 
-
+		Log.d("FIVE", five+"");
 
 		GridView gridview = (GridView) View.findViewById(R.id.gridview);
 		ImageAdapter adapter;
 		try {
-			adapter = new ImageAdapter(this.getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row);
+			adapter = new ImageAdapter(this.getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five == 4)?true:false);
 			gridview.setAdapter(adapter);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

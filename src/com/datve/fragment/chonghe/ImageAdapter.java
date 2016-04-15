@@ -22,22 +22,29 @@ public class ImageAdapter extends BaseAdapter {
 	private boolean isTwoFloor,isFirstFloor;
 	private int size;
 	private int getItem;
+	private boolean isFive;
+	private boolean isChecked,isIgnore;
+	private int ignore;
 	public ImageAdapter(Activity c) {
 		mContext = c;
 		if(c == null)
 			Log.d("NULL", "ko co du lieu ");
 	}
-	
-	public ImageAdapter(Activity c,ArrayList<ChonGheObject> data,boolean isTwoFloor,boolean isFirstFloor,int size){
+
+	public ImageAdapter(Activity c,ArrayList<ChonGheObject> data,boolean isTwoFloor,boolean isFirstFloor,int size,boolean isFive){
 		this.data = new ArrayList<ChonGheObject>(data);
 		this.mContext = c;
 		this.isTwoFloor = isTwoFloor;
 		this.isFirstFloor = isFirstFloor;
-		this.size = size*5;
+		this.size = size;
 		this.getItem = 0;
+		this.isChecked = false;
+		this.isIgnore = true;
+		this.isFive = isFive;
+		this.ignore = 1;
 	}
 	public int getCount() {
-		return this.size;
+		return this.size*5;
 	}
 
 	public Object getItem(int position) {
@@ -91,8 +98,8 @@ public class ImageAdapter extends BaseAdapter {
 		i1.setImageResource(R.drawable.sample_7);
 		t.setText("ABC");
 		try{
-			
-			if(!this.isTwoFloor && ((position - 2) % 5 !=0) && position < this.data.size() -1){
+
+			if(!this.isTwoFloor && ((position - 2) % 5 !=0) && position < this.data.size() && this.size != position/5 -1 || position > this.size*5-5 && this.isFive){
 				ChonGheObject ghe = this.data.get(position);
 				t.setText(ghe.getChair());
 				Log.d("IS_TOW", "is floor - "+this.isTwoFloor+" pos: "+position+" chair: "+ghe.getChair());
@@ -101,8 +108,25 @@ public class ImageAdapter extends BaseAdapter {
 				}else{
 					i1.setImageResource(R.drawable.ghe_nau_02);
 				}
+			} else if(this.isTwoFloor) {
+				if(position % 5 == 0 || (position -2)%5 ==0){
+					this.ignore = position+1;
+				}
+				Log.d("SISISISI", "SSS"+position+" ig " +this.ignore + "hahaha" +this.data.size());
+				if(this.ignore != position && position < this.data.size() && this.size != position/5 -1 || position > this.size*5-5 && this.isFive){
+					ChonGheObject ghe = this.data.get(position);
+					t.setText(ghe.getChair());
+					Log.d("IS_TOW", "is floor - "+this.isTwoFloor+" pos: "+position+" chair: "+ghe.getChair());
+					if(ghe.getBookstatus().equalsIgnoreCase("1")){
+						i1.setImageResource(R.drawable.ghe_blue);
+					}else{
+						i1.setImageResource(R.drawable.ghe_nau_02);
+					}
+				}
 			}
-			
+
+
+
 		}catch(Exception e){
 			//TODO nothing
 			i1.setImageResource(R.drawable.sample_7);
