@@ -1,20 +1,19 @@
 package com.datve_online.request;
 
-import java.io.BufferedInputStream;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
 public class Request extends AsyncTask<String, Void, String>{
-	private String host = "http://192.168.1.102:8081/RestfulDatVeWedService/rest/DatVeService/";
+	private String host = "http://192.168.1.83:8081/RestfulDatVeWedService/rest/DatVeService/";
 	private String url;
 	private String method;
 	private HttpURLConnection conn;

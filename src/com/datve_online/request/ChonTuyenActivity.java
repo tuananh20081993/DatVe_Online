@@ -62,6 +62,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 	private AutoCompleteTextView diemden;
 	private SQLiteDatabase database;
 	private String datadiemdi, datadiemden;
+	private String tendiemdi, tendiemden;
 
 
 	/**
@@ -183,6 +184,8 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 					String cols[] = {"id","name","origincode","originname","destcode","destname","distance","duration","kind","totalschedule"};
 					String selectionArgs[] = {src.getOrigincode()};
 					datadiemdi=src.getOrigincode();
+					tendiemdi=src.getOriginname();
+					
 
 					ArrayList<ArrayList<String>> reslt = conn.find("route", cols, "origincode =?", selectionArgs, "", "", "", null);
 					ArrayList<Route> route = getAdapter(reslt,false);
@@ -207,6 +210,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 				// TODO Auto-generated method stub
 				Route src = (Route)parent.getItemAtPosition(position);
 				datadiemden = src.getDestcode();
+				tendiemden=src.getDestname();
 			}
 
 		});
@@ -219,7 +223,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(ChonTuyenActivity.this,ThongTinKhachHang.class);
-				String data = "{\"OriginCode\":\""+datadiemdi+"\",\"DestCode\":\""+datadiemden+"\",\"DepartureDate\":\""+txtDate.getText()+"\"}";
+				String data = "{\"OriginCode\":\""+datadiemdi+"\",\"DestCode\":\""+datadiemden+"\",\"DepartureDate\":\""+txtDate.getText()+"\",\"OriginName\":\""+tendiemdi+"\",\"DestName\":\""+tendiemden+"\"}";
 				intent.putExtra("tuyen", data);
 				Log.d("data", data);
 				startActivity(intent);

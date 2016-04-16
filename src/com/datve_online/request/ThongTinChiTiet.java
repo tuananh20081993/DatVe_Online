@@ -1,40 +1,18 @@
 package com.datve_online.request;
-import java.util.ArrayList;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.datve.data.parse.tuyenxe.DiemDonObject;
-import com.datve.data.parse.tuyenxe.ThoiGianObject;
-import com.datve.data.parse.tuyenxe.TuyenXeObject;
-import com.datve.fragment.chonghe.FragmentChonGhe;
-import com.datve.fragment.chonghe.FragmentTabManager;
-import com.datve.fragment.chonghe.TabFactory;
-import com.datve.fragment.chonghe.ImageAdapter;
-import com.datve.sqlite.SqliteConnector;
-import com.datve_online.MainActivity;
+
+
 import com.example.datve_online.R;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.app.Activity;
-import android.content.ContentValues;
-import android.content.Intent;
-import android.database.Cursor;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
-import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.PopupMenu.OnMenuItemClickListener;
+import android.app.Activity;
+import android.content.Intent;
+
 public class ThongTinChiTiet extends Activity
 {
 	private String json;
@@ -92,6 +70,7 @@ public class ThongTinChiTiet extends Activity
 			ngaydi.setText(chontuyen.getString("DepartureDate"));
 			ngayden.setText(chontuyen.getString("DepartureDate"));
 			noidon.setText(diemdon.getString("Address"));
+			soghe.setText(20);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

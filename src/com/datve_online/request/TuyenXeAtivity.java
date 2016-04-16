@@ -5,30 +5,26 @@ import android.os.Bundle;
 import android.util.Log;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 
-import java.lang.ref.ReferenceQueue;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.datve.data.parse.Route;
+
 import com.datve.data.parse.tuyenxe.DiemDonObject;
 import com.datve.data.parse.tuyenxe.ThoiGianObject;
 import com.datve.data.parse.tuyenxe.TuyenXeObject;
 import com.datve.fragment.chonghe.FragmentTabManager;
-import com.datve.sqlite.SqliteConnector;
 import com.example.datve_online.R;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -94,7 +90,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 			}
 		});
 
-		
+		TextView tentuyen = (TextView) findViewById(R.id.texttentuyen);
 		spinroute=(Spinner) findViewById(R.id.spchontuyen);
 		String ApiGetRoutePrice = " "; 
 		myData= this.getIntent();
@@ -105,6 +101,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 		try {
 			dataTuyen = new JSONObject(json);
 			ApiGetRoutePrice = this.ConnectDataApiGetRoutePrice(dataTuyen.getString("OriginCode"),dataTuyen.getString("DestCode"), dataTuyen.getString("DepartureDate"));
+			tentuyen.setText(dataTuyen.getString("OriginName")+" - " + dataTuyen.getString("DestName"));
 			Log.d("fromApI", ApiGetRoutePrice);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

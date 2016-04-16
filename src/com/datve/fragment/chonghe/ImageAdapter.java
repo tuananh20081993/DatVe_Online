@@ -95,8 +95,8 @@ public class ImageAdapter extends BaseAdapter {
 		row = inflater.inflate(R.layout.layout_image, parent, false);
 		ImageView i1 =(ImageView)row.findViewById(R.id.imageLogo);
 		TextView t = (TextView)row.findViewById(R.id.textImageChair);
-		i1.setImageResource(R.drawable.sample_7);
-		t.setText("ABC");
+		i1.setImageResource(R.drawable.images);
+		t.setText(" ");
 		try{
 
 			if(!this.isTwoFloor && ((position - 2) % 5 !=0) && position < this.data.size() && this.size != position/5 -1 || position > this.size*5-5 && this.isFive){
