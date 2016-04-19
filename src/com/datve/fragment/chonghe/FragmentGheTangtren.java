@@ -113,18 +113,17 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 				chonghe = new ChonGheObject(getseatarray.getJSONObject(getItem));
 				if(i == 2 || i ==3)
 					Log.d("ITEM_2_3", getseatarray.getJSONObject(getItem).toString());
-				Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list: "+listseat.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
+				Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list: "+listseat.size()+" size list tang tren: "+listseattangtren.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
 				if (chonghe.getFloorno().equalsIgnoreCase("1"))
 				{
 					listseat.add(chonghe);
-
 				}else{
 					listseattangtren.add(chonghe);
 				}
-				if((i != ignore || i >= row*5 -5) && getItem < getseatarray.length()-1){
+				if((i != ignore || i >= row/2*5 -5 && i <=row/2*5 || i >= row*5-5) && getItem < getseatarray.length()-1){
 					//listseat.add(chonghe);
-					if(i>=row*5-5){
-						if(chonghe.getRowno().equalsIgnoreCase(row+"")){
+					if(i>=row/2*5-5){
+						if(chonghe.getRowno().equalsIgnoreCase(row/2+"")&&!chonghe.getFloorno().equalsIgnoreCase("1")){
 							five++;
 						}
 					}
@@ -158,7 +157,7 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 		GridView gridview = (GridView) View.findViewById(R.id.gridview);
 		ImageAdapter adapter;
 		try {
-			adapter = new ImageAdapter(this.getActivity(),listseattangtren,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five == 4)?true:false);
+			adapter = new ImageAdapter(this.getActivity(),listseattangtren,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row/2,(five == 4)?true:false);
 			gridview.setAdapter(adapter);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

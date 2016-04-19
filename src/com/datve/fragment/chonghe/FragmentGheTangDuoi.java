@@ -164,7 +164,7 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 		gridview = (GridView) View.findViewById(R.id.gridview);
 		ImageAdapter adapter;
 		try {
-			adapter = new ImageAdapter(getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five == 4)?true:false);
+			adapter = new ImageAdapter(getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five >= 4)?true:false);
 			gridview.setAdapter(adapter);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
