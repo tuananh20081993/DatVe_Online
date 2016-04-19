@@ -2,6 +2,7 @@ package com.datve.fragment.chonghe;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 
@@ -10,13 +11,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.datve.data.parse.chontuyen.DiemDiObject;
 import com.datve.data.parse.tuyenxe.DiemDonObject;
 import com.datve.data.parse.tuyenxe.ThoiGianObject;
+import com.datve.data.parse.tuyenxe.TuyenXeAtivity;
 import com.datve.data.parse.tuyenxe.TuyenXeObject;
 import com.datve.sqlite.SqliteConnector;
 import com.datve_online.request.Request;
 import com.datve_online.request.ThongTinChiTiet;
-import com.datve_online.request.TuyenXeAtivity;
 import com.example.datve_online.R;
 
 import android.content.Intent;
@@ -30,6 +32,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.view.View.OnClickListener;
 import android.content.Context;
@@ -43,21 +47,26 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 	private DiemDonObject diemdonObject;
 	private TuyenXeObject tuyenObject;
 	private String  json;	
+	private JSONArray getseatarray;
+	private JSONObject jsontime=null, jsontuyen = null, jsondate = null, jsondiemdon = null;
+	private GridView gridview;
+	private String soghe,sove;
+	private String GetApiSeat = " ";
+	private boolean [] flag;
+	private int countsove =0;
+
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,	Bundle savedInstanceState) 
 	{
+	
 		View View=inflater.inflate(R.layout.layout_fragment_ghetangduoi, container,
 				false);
 
-		//		database = context.openOrCreateDatabase("datveonline.db", 
-		//				Context.MODE_PRIVATE, null);
-		//
-		//		SqliteConnector sql = new SqliteConnector(database);
-		//		sql.ChonGheTable();
 		Log.d("day la tang duoi", "--------------------");	
 		Intent intent = this.getActivity().getIntent();
-		JSONObject jsontime=null, jsontuyen = null, jsondate = null, jsondiemdon = null;
+
 		json = (String)intent.getStringExtra("chonghe");
+		sove =(String)intent.getStringExtra("sove");
 		try {
 			jsondate = new JSONObject(json);
 			Log.d("jsondate", json);
@@ -73,10 +82,10 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}	
-		JSONArray getseatarray = new JSONArray();
+
+		getseatarray = new JSONArray();
 		ArrayList<ChonGheObject> listseat = new ArrayList<ChonGheObject>();
 		ArrayList<ChonGheObject> listseattangtren = new ArrayList<ChonGheObject>();
-		String GetApiSeat = " ";
 		int count = 0;
 		int row = 0;
 		int five = 0;
@@ -98,7 +107,7 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 			int ignore = (isTwo)?1:2;
 
 			boolean isFive = false;
-			
+
 			int getItem = 0;
 			for (int i = 0; i < row*5; i++) {
 
@@ -106,7 +115,7 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 				chonghe = new ChonGheObject(getseatarray.getJSONObject(getItem));
 				if(i == 2 || i ==3)
 					Log.d("ITEM_2_3", getseatarray.getJSONObject(getItem).toString());
-				Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list: "+listseat.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
+				Log.d("ADD_ITEM", "ITEM: "+getItem+" - "+" size list tang duoi: "+listseat.size()+" size list tang tren: "+listseattangtren.size()+" -  seat: "+chonghe.getChair()+" - I: "+i+ " - igonre: "+ignore);
 				if (chonghe.getFloorno().equals("1"))
 				{
 					listseat.add(chonghe);
@@ -138,9 +147,11 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 							ignore = i+1;
 						}
 					}
-	
+
 				}
 			}
+			this.flag = new boolean[listseat.size()];
+			Arrays.fill(flag, false);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -149,31 +160,62 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 
 		Log.d("FIVE", five+"");
 
-		GridView gridview = (GridView) View.findViewById(R.id.gridview);
+
+		gridview = (GridView) View.findViewById(R.id.gridview);
 		ImageAdapter adapter;
 		try {
-			adapter = new ImageAdapter(this.getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five == 4)?true:false);
+			adapter = new ImageAdapter(getActivity(),listseat,(jsontime.getString("Kind").equalsIgnoreCase("Ghế")?false:true),true,row,(five == 4)?true:false);
 			gridview.setAdapter(adapter);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-
-
 		gridview.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick1(AdapterView<?> parent, View v,
-					int position, long id) {
-				//	            Toast.makeText(FragmentGheTangtren.this, "" + position,
-				//	                    Toast.LENGTH_SHORT).show();
-			}
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, android.view.View view, int position, long id) {
 				// TODO Auto-generated method stub
+				ChonGheObject src = (ChonGheObject)parent.getItemAtPosition(position);
+				soghe = src.getChair();
+				Log.d("số ghế",soghe );
+				ImageView image = (ImageView) view.findViewById(R.id.imageLogo);
+				//				if(image.getDrawable().get)
+				if(src.getBookstatus().equalsIgnoreCase("1")){
+					Toast.makeText(getActivity(), "Ghế Đã được chọn", Toast.LENGTH_SHORT).show();
+				}else
+				{
+					if(flag[position])
+					{
+						image.setImageResource(R.drawable.ghe_nau_02);
+						flag[position] = false;
+						countsove=(countsove<=0)?0:countsove-1;
+						Toast.makeText(getActivity(), "Bạn Đã bỏ chọn ghế: " +soghe, Toast.LENGTH_SHORT).show();
+					}else{
+						if(countsove >= Integer.parseInt(sove)){
+							Toast.makeText(getActivity(), "Bạn Đã vượt quá số vé ", Toast.LENGTH_SHORT).show();
+						}
+						else{
+							image.setImageResource(R.drawable.ghe_red);
+							flag[position] = true;
+							countsove++;
+							Toast.makeText(getActivity(), "Bạn Đang chọn ghế: " +soghe, Toast.LENGTH_SHORT).show();
+						}
+					}
+						
+					
+					
+
+				}
+				//	Log.d("soghe", soghe);				
+				
+
 
 			}
-		});
+		}); 
+
+
+
+
 
 
 
@@ -188,8 +230,11 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 				String tuyenxe = null;
 				String diemdon = null;
 				Intent myintent = new Intent(getActivity(),ThongTinChiTiet.class);
+				String dataghe = "{\"Chair\":\""+soghe+"\"}";
 				myintent.putExtra("tuyen", json);
-				//	Log.d("json", json);
+				myintent.putExtra("soghe", dataghe);
+
+				Log.d("soghe", dataghe);
 				try {
 					thoigian = "{\"Time\":\""+timeObject.getString("Time")+"\"}";	
 					tuyenxe = "{\"Name\":\""+tuyenObject.getString("Name")+"\",\"Price\":\""+tuyenObject.getString("Price")+"\"}";

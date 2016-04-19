@@ -1,4 +1,4 @@
-package com.datve.data.parse;
+package com.datve.data.parse.chontuyen;
 
 import org.json.JSONException;
 import org.json.JSONObject;

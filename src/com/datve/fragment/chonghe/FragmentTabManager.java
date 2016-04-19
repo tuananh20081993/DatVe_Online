@@ -1,7 +1,7 @@
 package com.datve.fragment.chonghe;
 
+import com.datve.data.parse.tuyenxe.TuyenXeAtivity;
 import com.datve_online.request.ThongTinChiTiet;
-import com.datve_online.request.TuyenXeAtivity;
 import com.example.datve_online.R;
 
 import android.content.Intent;

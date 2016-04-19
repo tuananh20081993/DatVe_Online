@@ -1,18 +1,18 @@
-package com.datve.data.parse;
+package com.datve.data.parse.chontuyen;
 
 import java.util.ArrayList;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Route extends JSONObject{
+public class DiemDiObject extends JSONObject{
 	private String id,name,origincode,originname,destcode,destname,distance,duration,kind,totalschedule;
-	private ArrayList<RouteStop>routeStop;
-	public Route(JSONObject obj) throws JSONException{
+	private ArrayList<DiemDenObject>diemDenObject;
+	public DiemDiObject(JSONObject obj) throws JSONException{
 		super(obj.toString());
 	}
 	
-	public Route(String id, String name, String origincode, String originname, String destcode, String destname,
+	public DiemDiObject(String id, String name, String origincode, String originname, String destcode, String destname,
 			String distance, String duration, String kind, String totalschedule) throws JSONException {
 		super("{\"Id\":\""+id+"\",\"Name\":\""+name+"\",\"OriginCode\":\""+origincode+"\",\"DestCode\":\""+destcode+"\""
 				+ ",\"DestName\":\""+destname+"\",\"Distance\":\""+distance+"\",\"Kind\":\""+kind+"\",\"TotalSchedule\":\""+totalschedule+"\" }");
@@ -29,8 +29,8 @@ public class Route extends JSONObject{
 		
 	}
 
-	public void addRoutes(RouteStop routeStop) {
-		this.routeStop.add(routeStop);
+	public void addRoutes(DiemDenObject diemDenObject) {
+		this.diemDenObject.add(diemDenObject);
 	}
 
 	public String getId() {
@@ -111,12 +111,12 @@ public class Route extends JSONObject{
 		this.totalschedule = totalschedule;
 	}
 
-	public ArrayList<RouteStop> getRouteStop() {
-		return routeStop;
+	public ArrayList<DiemDenObject> getRouteStop() {
+		return diemDenObject;
 	}
 
-	public void setRouteStop(ArrayList<RouteStop> routeStop) {
-		this.routeStop = routeStop;
+	public void setRouteStop(ArrayList<DiemDenObject> diemDenObject) {
+		this.diemDenObject = diemDenObject;
 	}
 	
 	

@@ -1079,20 +1079,21 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int ghe_blue=0x7f020057;
         public static final int ghe_nau_02=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
-        public static final int icon=0x7f02005a;
-        public static final int icon2=0x7f02005b;
-        public static final int icon3=0x7f02005c;
-        public static final int images=0x7f02005d;
-        public static final int logo_bia=0x7f02005e;
-        public static final int sample_0=0x7f02005f;
-        public static final int sample_1=0x7f020060;
-        public static final int sample_2=0x7f020061;
-        public static final int sample_3=0x7f020062;
-        public static final int sample_4=0x7f020063;
-        public static final int sample_5=0x7f020064;
-        public static final int sample_6=0x7f020065;
-        public static final int sample_7=0x7f020066;
+        public static final int ghe_red=0x7f020059;
+        public static final int ic_launcher=0x7f02005a;
+        public static final int icon=0x7f02005b;
+        public static final int icon2=0x7f02005c;
+        public static final int icon3=0x7f02005d;
+        public static final int images=0x7f02005e;
+        public static final int logo_bia=0x7f02005f;
+        public static final int sample_0=0x7f020060;
+        public static final int sample_1=0x7f020061;
+        public static final int sample_2=0x7f020062;
+        public static final int sample_3=0x7f020063;
+        public static final int sample_4=0x7f020064;
+        public static final int sample_5=0x7f020065;
+        public static final int sample_6=0x7f020066;
+        public static final int sample_7=0x7f020067;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f09003f;
@@ -1130,7 +1131,6 @@ containing a value of this type.
         public static final int edittextemail=0x7f090068;
         public static final int edittextinh=0x7f09006a;
         public static final int edittextngaysinh=0x7f090069;
-        public static final int edittextsove=0x7f09004f;
         public static final int edittextten=0x7f090067;
         public static final int end=0x7f090017;
         public static final int expand_activities_button=0x7f090026;
@@ -1171,6 +1171,7 @@ containing a value of this type.
         public static final int showHome=0x7f09000c;
         public static final int showTitle=0x7f09000d;
         public static final int soghe=0x7f09005e;
+        public static final int sove=0x7f09004f;
         public static final int spchondiemdon=0x7f090046;
         public static final int spchongio=0x7f090044;
         public static final int spchontuyen=0x7f090042;
@@ -2693,7 +2694,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x010103f8
+            0x0101012f, 0x01010130, 0x01010131, 0x01010435
         };
         /**
           <p>

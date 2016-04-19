@@ -1,4 +1,4 @@
-package com.datve_online.request;
+package com.datve.data.parse.tuyenxe;
 
 
 import android.os.Bundle;
@@ -20,11 +20,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-import com.datve.data.parse.tuyenxe.DiemDonObject;
-import com.datve.data.parse.tuyenxe.ThoiGianObject;
-import com.datve.data.parse.tuyenxe.TuyenXeObject;
 import com.datve.fragment.chonghe.FragmentTabManager;
+import com.datve_online.request.Request;
 import com.example.datve_online.R;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -39,7 +36,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 	private DiemDonObject diemdon,datadiemdon;
 	private JSONObject dataTuyen = null;
 	private JSONObject time = null;
-	private String json;
+	private String json,sove;
 	private String ApiGetTime = " ";
 	private String ApiGetboardingpoint = " ";
 	private Spinner spintake, spinroute,spintime;
@@ -67,6 +64,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 				}else{
 					Log.d("BEFORE_SEND", dataSend.getStringJson());
 					myintent.putExtra("chonghe", json);	
+					myintent.putExtra("sove", sove);
 					Log.d("json", json);
 					myintent.putExtra( "Timer", dataSend.getStringJson());
 					Log.d("SEND", dataSend.getStringJson());
@@ -95,6 +93,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 		String ApiGetRoutePrice = " "; 
 		myData= this.getIntent();
 		json = (String) myData.getStringExtra("thongtin");
+		sove = (String) myData.getStringExtra("sove");
 		Log.d("jsontuyenxe", json);
 		
 		
@@ -128,8 +127,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 		
 
 
-		ArrayAdapter<TuyenXeObject> arrayAdapter = new ArrayAdapter<TuyenXeObject>
-		(getApplicationContext(),android.R.layout.simple_spinner_item,arrAdapter.subList(0, arrAdapter.size()));
+		ArrayAdapter<TuyenXeObject> arrayAdapter = new ArrayAdapter<TuyenXeObject>(TuyenXeAtivity.this,android.R.layout.simple_spinner_item,arrAdapter.subList(0, arrAdapter.size()));
 		ArrayAdapter adapterroute=arrayAdapter;
 
 		
@@ -164,7 +162,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 					e.printStackTrace();
 				}
 				
-				ArrayAdapter<ThoiGianObject> arrayadapter = new ArrayAdapter<ThoiGianObject>(getApplicationContext(),android.R.layout.simple_spinner_item,list.subList(0, list.size()));
+				ArrayAdapter<ThoiGianObject> arrayadapter = new ArrayAdapter<ThoiGianObject>(TuyenXeAtivity.this,android.R.layout.simple_spinner_item,list.subList(0, list.size()));
 				ArrayAdapter adaptime = arrayadapter;
 				spintime.setAdapter(adaptime);
 				  
@@ -206,7 +204,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				ArrayAdapter<DiemDonObject> arrayadapter = new ArrayAdapter<DiemDonObject>(getApplicationContext(),android.R.layout.simple_spinner_item,listdd.subList(0,listdd.size()));
+				ArrayAdapter<DiemDonObject> arrayadapter = new ArrayAdapter<DiemDonObject>(TuyenXeAtivity.this,android.R.layout.simple_spinner_item,listdd.subList(0,listdd.size()));
 				ArrayAdapter arrdiemdon = arrayadapter;
 				spintake.setAdapter(arrdiemdon);
 				arrdiemdon.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);

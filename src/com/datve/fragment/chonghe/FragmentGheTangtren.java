@@ -2,6 +2,7 @@ package com.datve.fragment.chonghe;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 
@@ -12,11 +13,11 @@ import org.json.JSONObject;
 
 import com.datve.data.parse.tuyenxe.DiemDonObject;
 import com.datve.data.parse.tuyenxe.ThoiGianObject;
+import com.datve.data.parse.tuyenxe.TuyenXeAtivity;
 import com.datve.data.parse.tuyenxe.TuyenXeObject;
 import com.datve.sqlite.SqliteConnector;
 import com.datve_online.request.Request;
 import com.datve_online.request.ThongTinChiTiet;
-import com.datve_online.request.TuyenXeAtivity;
 import com.example.datve_online.R;
 
 import android.content.Intent;
@@ -30,6 +31,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.view.View.OnClickListener;
 import android.content.Context;
@@ -43,6 +46,9 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 	private DiemDonObject diemdonObject;
 	private TuyenXeObject tuyenObject;
 	private String  json;	
+	private boolean [] flag;
+	private int countsove =0;
+	private String soghe, sove;
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,	Bundle savedInstanceState) 
 	{
@@ -58,6 +64,7 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 		Intent intent = this.getActivity().getIntent();
 		JSONObject jsontime=null, jsontuyen = null, jsondate = null, jsondiemdon = null;
 		json = (String)intent.getStringExtra("chonghe");
+		sove = (String)intent.getStringExtra("sove");
 		try {
 			jsondate = new JSONObject(json);
 			Log.d("jsondate", json);
@@ -137,11 +144,9 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 						}
 					}
 				}
-
-
-
-
 			}
+			this.flag = new boolean[listseat.size()];
+			Arrays.fill(flag, false);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -161,21 +166,46 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 		}
 
 
+  gridview.setOnItemClickListener(new OnItemClickListener() {
 
-		gridview.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick1(AdapterView<?> parent, View v,
-					int position, long id) {
-				//	            Toast.makeText(FragmentGheTangtren.this, "" + position,
-				//	                    Toast.LENGTH_SHORT).show();
+	@Override
+	public void onItemClick(AdapterView<?> parent, android.view.View view, int position, long id) {
+		// TODO Auto-generated method stub
+		
+		ChonGheObject src = (ChonGheObject)parent.getItemAtPosition(position);
+		soghe = src.getChair();
+		Log.d("số ghế",soghe );
+		ImageView image = (ImageView) view.findViewById(R.id.imageLogo);
+		//				if(image.getDrawable().get)
+		if(src.getBookstatus().equalsIgnoreCase("1")){
+			Toast.makeText(getActivity(), "Ghế Đã được chọn", Toast.LENGTH_SHORT).show();
+		}else
+		{
+			if(flag[position])
+			{
+				image.setImageResource(R.drawable.ghe_nau_02);
+				flag[position] = false;
+				countsove=(countsove<=0)?0:countsove-1;
+				Toast.makeText(getActivity(), "Bạn Đã bỏ chọn ghế: " +soghe, Toast.LENGTH_SHORT).show();
+			}else{
+				if(countsove >= Integer.parseInt(sove)){
+					Toast.makeText(getActivity(), "Bạn Đã vượt quá số vé ", Toast.LENGTH_SHORT).show();
+				}
+				else{
+					image.setImageResource(R.drawable.ghe_red);
+					flag[position] = true;
+					countsove++;
+					Toast.makeText(getActivity(), "Bạn Đang chọn ghế: " +soghe, Toast.LENGTH_SHORT).show();
+				}
 			}
+				
+			
+			
 
-			@Override
-			public void onItemClick(AdapterView<?> parent, android.view.View view, int position, long id) {
-				// TODO Auto-generated method stub
-
-			}
-		});
-
+		}
+		
+	}
+});
 
 
 
@@ -190,6 +220,7 @@ public class FragmentGheTangTren extends Fragment implements OnClickListener{
 				String diemdon = null;
 				Intent myintent = new Intent(getActivity(),ThongTinChiTiet.class);
 				myintent.putExtra("tuyen", json);
+				myintent.putExtra("sove", sove);
 				//	Log.d("json", json);
 				try {
 					thoigian = "{\"Time\":\""+timeObject.getString("Time")+"\"}";	

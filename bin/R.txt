@@ -236,20 +236,21 @@ int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ghe_blue 0x7f020057
 int drawable ghe_nau_02 0x7f020058
-int drawable ic_launcher 0x7f020059
-int drawable icon 0x7f02005a
-int drawable icon2 0x7f02005b
-int drawable icon3 0x7f02005c
-int drawable images 0x7f02005d
-int drawable logo_bia 0x7f02005e
-int drawable sample_0 0x7f02005f
-int drawable sample_1 0x7f020060
-int drawable sample_2 0x7f020061
-int drawable sample_3 0x7f020062
-int drawable sample_4 0x7f020063
-int drawable sample_5 0x7f020064
-int drawable sample_6 0x7f020065
-int drawable sample_7 0x7f020066
+int drawable ghe_red 0x7f020059
+int drawable ic_launcher 0x7f02005a
+int drawable icon 0x7f02005b
+int drawable icon2 0x7f02005c
+int drawable icon3 0x7f02005d
+int drawable images 0x7f02005e
+int drawable logo_bia 0x7f02005f
+int drawable sample_0 0x7f020060
+int drawable sample_1 0x7f020061
+int drawable sample_2 0x7f020062
+int drawable sample_3 0x7f020063
+int drawable sample_4 0x7f020064
+int drawable sample_5 0x7f020065
+int drawable sample_6 0x7f020066
+int drawable sample_7 0x7f020067
 int id LinearLayout1 0x7f09003f
 int id action_bar 0x7f09001c
 int id action_bar_activity_content 0x7f090001
@@ -285,7 +286,6 @@ int id edittexhuyen 0x7f09006b
 int id edittextemail 0x7f090068
 int id edittextinh 0x7f09006a
 int id edittextngaysinh 0x7f090069
-int id edittextsove 0x7f09004f
 int id edittextten 0x7f090067
 int id end 0x7f090017
 int id expand_activities_button 0x7f090026
@@ -326,6 +326,7 @@ int id showCustom 0x7f09000b
 int id showHome 0x7f09000c
 int id showTitle 0x7f09000d
 int id soghe 0x7f09005e
+int id sove 0x7f09004f
 int id spchondiemdon 0x7f090046
 int id spchongio 0x7f090044
 int id spchontuyen 0x7f090042
@@ -627,7 +628,7 @@ int styleable MenuItem_android_title 7
 int styleable MenuItem_android_titleCondensed 8
 int styleable MenuItem_android_visible 4
 int styleable MenuItem_showAsAction 13
-int[] styleable MenuView { 0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 0x0101012f, 0x01010130, 0x01010131, 0x010103f8 }
+int[] styleable MenuView { 0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 0x0101012f, 0x01010130, 0x01010131, 0x01010435 }
 int styleable MenuView_android_headerBackground 4
 int styleable MenuView_android_horizontalDivider 2
 int styleable MenuView_android_itemBackground 5

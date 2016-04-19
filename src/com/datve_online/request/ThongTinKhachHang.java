@@ -2,7 +2,7 @@ package com.datve_online.request;
 
 import java.util.ArrayList;
 
-
+import com.datve.data.parse.tuyenxe.TuyenXeAtivity;
 import com.datve.sqlite.SqliteConnector;
 import com.example.datve_online.R;
 
@@ -31,15 +31,16 @@ public class ThongTinKhachHang extends Activity implements OnMenuItemClickListen
 	private SqliteConnector dbHelper;
 	private EditText ten,email,ngaysinh,tinh,quanhuyen;
 	private Intent myData;
-	private String json;
+	private String jsondatatuyen,sove;
 	Button tieptuc;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
 		myData = this.getIntent();
-		json = (String) myData.getStringExtra("tuyen");
-		Log.d("jsonthongtinkhachhang", json);
+		jsondatatuyen = (String) myData.getStringExtra("tuyen");
+		sove =(String)myData.getStringExtra("sove");
+		//Log.d("jsonthongtinkhachhang", json);
 		setContentView(R.layout.layout_thongtinkhachhang);
 		database = openOrCreateDatabase(
 				"datveonline.db",
@@ -92,7 +93,8 @@ public class ThongTinKhachHang extends Activity implements OnMenuItemClickListen
 				dbHelper.save("thongtinkhachhang", "", cols, vls,"soDt=?");
 				
 				
-				myData.putExtra("thongtin",json);
+				myData.putExtra("thongtin",jsondatatuyen);
+				myData.putExtra("sove", sove);
 		
 				
 				startActivity(myData);

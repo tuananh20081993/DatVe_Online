@@ -1,4 +1,4 @@
-package com.datve_online.request;
+package com.datve.data.parse.chontuyen;
 
 
 import java.util.Iterator;
@@ -7,15 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-
-
-import com.datve.data.parse.Route;
-import com.datve.data.parse.RouteStop;
-import com.datve.data.parse.Router;
-
 import com.datve.sqlite.SqliteConnector;
-
-
+import com.datve_online.request.ThongTinKhachHang;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -57,7 +50,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 
 {
 
-	private TextView txtDate;
+	private TextView txtDate, txtsove;
 	private AutoCompleteTextView diemdi;
 	private AutoCompleteTextView diemden;
 	private SQLiteDatabase database;
@@ -101,36 +94,36 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 		Router routes = new Router(ret,true);
 		JSONArray poinss =new JSONArray(ret);
 		for (int i = 0; i < poinss.length(); i++) {
-			Route route = new Route(poinss.getJSONObject(i));
-			sql.save("route", "", route.getColumns(), route.getValues(), "id = ?");
+			DiemDiObject diemDiObject = new DiemDiObject(poinss.getJSONObject(i));
+			sql.save("route", "", diemDiObject.getColumns(), diemDiObject.getValues(), "id = ?");
 			//TODO implement stub getColumns, getValues
-			JSONArray r = route.getJSONArray("RouteStops");
+			JSONArray r = diemDiObject.getJSONArray("RouteStops");
 			for (int j = 0; j < r.length(); j++) {
-				RouteStop rst = new RouteStop(r.getJSONObject(j));
-				rst.setRouteId(route.getId());
+				DiemDenObject rst = new DiemDenObject(r.getJSONObject(j));
+				rst.setRouteId(diemDiObject.getId());
 				Log.d("routeStop", rst.getRouteId());
 				sql.save("routestop", "", rst.getColumns(), rst.getValues(), "Address = ?");
 			}	
 		}
-		//		ArrayList<Point>points = routes.getDest();
-		//		
-		//		for (Iterator<Point> iterator = points.iterator(); iterator.hasNext();) {
-		//			Point point = (Point) iterator.next();
-		//			Route route = new Route((JSONObject)point);
-		//			sql.save("route", "", route.getColumns(), route.getValues(), "id = ?");
-		//			//TODO implement stub getColumns, getValues
-		//			 JSONArray r = route.getJSONArray("RouteStops");
-		//			for (int i = 0; i < r.length(); i++) {
-		//				RouteStop rst = new RouteStop(r.getJSONObject(i));
-		//				rst.setRouteId(route.getId());
-		//				sql.save("routestop", "", rst.getColumns(), rst.getValues(), "Address = ?");
-		//			}			
-		//		}
+		
 	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
+		//cpheck file exits db file; 
+		File db = new File("/data/data/com.example.datve_online/databases/datveonline.db");
+		Log.d("FILE_PATH", db.getAbsolutePath());
+		if(!db.exists())
+		{
+			//run script;
+			try {
+				this.initdatabase();
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		setContentView(R.layout.layout_chontuyen);
 		database = openOrCreateDatabase(
 				"datveonline.db",
@@ -141,28 +134,14 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 		String selectionArgs[] = {};
 
 		ArrayList<ArrayList<String>> reslt = conn.find("route", cols, "", selectionArgs, "", "", "", null);
-		ArrayList<Route> listItem = getAdapter(reslt,true);
+		ArrayList<DiemDiObject> listItem = getAdapter(reslt,true);
 
 		diemdi=(AutoCompleteTextView)findViewById(R.id.autoCompleteTextView1);
 		diemden=(AutoCompleteTextView)findViewById(R.id.autoCompleteTextView2);
+		txtsove = (TextView)findViewById(R.id.sove);
 
 
-		//ArrayMap<String, String> data = new ArrayMap<String, String>[];
-
-		//		ArrayList<Point> dest = new ArrayList<Point>();
-		//		try {
-		//			String json = req.get();
-		//			Log.d("result", "JSON: "+json);
-		//			Router router = new Router(json);
-		//			dest = router.getDest();
-		//		} catch (InterruptedException e) {
-		//			// TODO Auto-generated catch block
-		//			e.printStackTrace();
-		//		} catch (ExecutionException e) {
-		//			// TODO Auto-generated catch block
-		//			e.printStackTrace();
-		//		}
-		//		
+		
 		ArrayAdapter myAdapterdiemdi = new ArrayAdapter( this, android.R.layout.simple_dropdown_item_1line,listItem.subList(0, listItem.size()));
 		diemdi.setAdapter(myAdapterdiemdi);
 		diemdi.setThreshold(1);
@@ -174,7 +153,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) 
 			{
 				// TODO Auto-generated method stub
-				Route src = (Route)parent.getItemAtPosition(position);
+				DiemDiObject src = (DiemDiObject)parent.getItemAtPosition(position);
 				try {
 					database = openOrCreateDatabase(
 							"datveonline.db",
@@ -188,9 +167,9 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 					
 
 					ArrayList<ArrayList<String>> reslt = conn.find("route", cols, "origincode =?", selectionArgs, "", "", "", null);
-					ArrayList<Route> route = getAdapter(reslt,false);
+					ArrayList<DiemDiObject> diemDiObject = getAdapter(reslt,false);
 
-					ArrayAdapter myAdapterdiemden = new ArrayAdapter( getApplicationContext(), android.R.layout.simple_dropdown_item_1line,route.subList(0, route.size()));
+					ArrayAdapter myAdapterdiemden = new ArrayAdapter( ChonTuyenActivity.this, android.R.layout.simple_dropdown_item_1line,diemDiObject.subList(0, diemDiObject.size()));
 					diemden.setAdapter(myAdapterdiemden);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
@@ -200,7 +179,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 
 		});
 
-		ArrayAdapter myAdapterdiemden = new ArrayAdapter( this, android.R.layout.simple_dropdown_item_1line,listItem.subList(0, listItem.size()));
+		ArrayAdapter myAdapterdiemden = new ArrayAdapter( ChonTuyenActivity.this, android.R.layout.simple_dropdown_item_1line,listItem.subList(0, listItem.size()));
 		diemden.setAdapter(myAdapterdiemden);
 		diemden.setThreshold(1);
 		diemden.setOnItemSelectedListener(this);
@@ -208,7 +187,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// TODO Auto-generated method stub
-				Route src = (Route)parent.getItemAtPosition(position);
+				DiemDiObject src = (DiemDiObject)parent.getItemAtPosition(position);
 				datadiemden = src.getDestcode();
 				tendiemden=src.getDestname();
 			}
@@ -223,8 +202,12 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(ChonTuyenActivity.this,ThongTinKhachHang.class);
-				String data = "{\"OriginCode\":\""+datadiemdi+"\",\"DestCode\":\""+datadiemden+"\",\"DepartureDate\":\""+txtDate.getText()+"\",\"OriginName\":\""+tendiemdi+"\",\"DestName\":\""+tendiemden+"\"}";
+				String data = "{\"OriginCode\":\""+datadiemdi+"\",\"DestCode\":\""+datadiemden+"\",\"DepartureDate\":\""+txtDate.getText()+"\",\"OriginName\":\""+tendiemdi+"\","
+						+ "\"DestName\":\""+tendiemden+"\"}";
+				String sove = txtsove.getText()+"";
+				intent.putExtra("sove", sove);
 				intent.putExtra("tuyen", data);
+				
 				Log.d("data", data);
 				startActivity(intent);
 
@@ -304,18 +287,18 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 
 
 
-	private ArrayList<Route> getAdapter(ArrayList<ArrayList<String>> reslt,boolean fromSrc) {
-		ArrayList<Route>listItem = new ArrayList<Route>();
+	private ArrayList<DiemDiObject> getAdapter(ArrayList<ArrayList<String>> reslt,boolean fromSrc) {
+		ArrayList<DiemDiObject>listItem = new ArrayList<DiemDiObject>();
 		String existed = "";
 		for (Iterator iterator = reslt.iterator(); iterator.hasNext();) {
 			ArrayList<String> arrayList = (ArrayList<String>) iterator.next();
-			Route r;
+			DiemDiObject r;
 			try {
 				if(existed.contains(arrayList.get((fromSrc?3:5)))){
 					continue;
 				}
 				existed+=arrayList.get((fromSrc?3:5))+",";
-				r = new Route(arrayList.get(0), arrayList.get(1),arrayList.get(2),arrayList.get(3),
+				r = new DiemDiObject(arrayList.get(0), arrayList.get(1),arrayList.get(2),arrayList.get(3),
 						arrayList.get(4),arrayList.get(5),arrayList.get(6),arrayList.get(7),
 						arrayList.get(8),arrayList.get(9));
 				r.setFromSrc(fromSrc);

@@ -1,15 +1,15 @@
-package com.datve.data.parse;
+package com.datve.data.parse.chontuyen;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class RouteStop extends JSONObject{
+public class DiemDenObject extends JSONObject{
 	
 	private String routeId,type,name,address,latitude,longtitude,odernumber,distance, duration;
 	
 	
 	
-	public RouteStop(String type, String name, String address, String latitude, String longtitude, String odernumber,
+	public DiemDenObject(String type, String name, String address, String latitude, String longtitude, String odernumber,
 			String distance, String duration) throws JSONException {
 		super("{\"Type\":\""+type+"\",\"Name\":\""+name+"\",\"Address\":\""+address+"\",\"Latitude\":\""+latitude+"\""
 				+ ",\"Longtitude\":\""+longtitude+"\",\"OrderNumber\":\""+odernumber+"\",\"Distance\":\""+distance+"\",\"Duration\":\""+duration+"\" }");
@@ -46,7 +46,7 @@ public class RouteStop extends JSONObject{
 	public void setDuration(String duration) {
 		this.duration = duration;
 	}
-	public RouteStop(JSONObject obj) throws JSONException{
+	public DiemDenObject(JSONObject obj) throws JSONException{
 		super(obj.toString());
 	}
 	

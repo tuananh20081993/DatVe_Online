@@ -5,8 +5,8 @@ import android.os.Bundle;
 
 import java.lang.reflect.InvocationTargetException;
 
+import com.datve.data.parse.tuyenxe.TuyenXeAtivity;
 import com.datve_online.request.ThongTinChiTiet;
-import com.datve_online.request.TuyenXeAtivity;
 import com.example.datve_online.R;
 
 import android.support.v4.app.Fragment;
