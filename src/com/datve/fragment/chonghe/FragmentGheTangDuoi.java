@@ -220,7 +220,7 @@ public class FragmentGheTangDuoi extends Fragment implements OnClickListener{
 
 
 
-		Button tieptuc = (Button) View.findViewById(R.id.button1);
+		Button tieptuc = (Button) View.findViewById(R.id.btnthanhtoan);
 		tieptuc.setOnClickListener(new OnClickListener() {
 
 

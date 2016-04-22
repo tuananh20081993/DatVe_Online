@@ -1,14 +1,17 @@
 package com.datve_online.request;
 
 
+import java.text.BreakIterator;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-
+//import com.braintreepayments.api.BraintreeBrowserSwitchActivity;
 import com.example.datve_online.R;
 import android.os.Bundle;
-import android.util.Log;
+import android.util.Log;import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 import android.app.Activity;
 import android.content.Intent;
@@ -75,11 +78,23 @@ public class ThongTinChiTiet extends Activity
 			ngaydi.setText(chontuyen.getString("DepartureDate"));
 			ngayden.setText(chontuyen.getString("DepartureDate"));
 			noidon.setText(diemdon.getString("Address"));
-			//soghe.setText(20);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		Button thanhtoan = (Button)findViewById(R.id.btnthanhtoan);
+		thanhtoan.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				//Intent myintent = new Intent(ThongTinChiTiet.this, BraintreeBrowserSwitchActivity );
+			//	startActivity(myintent);
+			}
+		});
+		
 	}
 }
 

@@ -49,7 +49,7 @@ public class TuyenXeAtivity extends Activity implements  OnItemSelectedListener
 
 		setContentView(R.layout.chontuyenxe);
 
-		buttonNext = (Button) findViewById(R.id.button1);
+		buttonNext = (Button) findViewById(R.id.btnthanhtoan);
 		buttonNext.setOnClickListener(new OnClickListener() 
 		{
 

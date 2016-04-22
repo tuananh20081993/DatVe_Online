@@ -78,7 +78,7 @@ public class ThongTinKhachHang extends Activity implements OnMenuItemClickListen
 			}
 		});
 		
-	    tieptuc = (Button) findViewById(R.id.button1);
+	    tieptuc = (Button) findViewById(R.id.btnthanhtoan);
 		tieptuc.setOnClickListener(new OnClickListener() {
 			
 			@Override

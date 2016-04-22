@@ -194,7 +194,7 @@ public class ChonTuyenActivity extends Activity implements OnClickListener, OnIt
 
 		});
 
-		Button tieptuc = (Button) findViewById(R.id.button1);
+		Button tieptuc = (Button) findViewById(R.id.btnthanhtoan);
 		tieptuc.setOnClickListener(new OnClickListener()
 		{
 

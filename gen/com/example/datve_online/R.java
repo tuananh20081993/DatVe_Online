@@ -1115,7 +1115,7 @@ containing a value of this type.
         public static final int autoCompleteTextView2=0x7f09004e;
         public static final int beginning=0x7f090016;
         public static final int btndate=0x7f090053;
-        public static final int button1=0x7f09003d;
+        public static final int btnthanhtoan=0x7f09003d;
         public static final int button2=0x7f09003e;
         public static final int checkbox=0x7f09002d;
         public static final int chinhsachsudung=0x7f09006c;
