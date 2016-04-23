@@ -1,0 +1,482 @@
+[
+    {
+        "outputFile": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\values-iw-rIL\\values-iw-rIL.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 74,
+                    "endOffset": 125
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 178,
+                        "endColumn": 74,
+                        "endOffset": 248
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 130,
+                    "endColumn": 65,
+                    "endOffset": 191
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 253,
+                        "endColumn": 65,
+                        "endOffset": 314
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 196,
+                    "endColumn": 63,
+                    "endOffset": 255
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 319,
+                        "endColumn": 63,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 260,
+                    "endColumn": 67,
+                    "endOffset": 323
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 383,
+                        "endColumn": 67,
+                        "endOffset": 446
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 328,
+                    "endColumn": 67,
+                    "endOffset": 391
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 451,
+                        "endColumn": 67,
+                        "endOffset": 514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 396,
+                    "endColumn": 60,
+                    "endOffset": 452
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 519,
+                        "endColumn": 60,
+                        "endOffset": 575
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 457,
+                    "endColumn": 57,
+                    "endOffset": 510
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 181,
+                        "endColumn": 57,
+                        "endOffset": 234
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 515,
+                    "endColumn": 63,
+                    "endOffset": 574
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 580,
+                        "endColumn": 63,
+                        "endOffset": 639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 579,
+                    "endColumn": 60,
+                    "endOffset": 635
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 644,
+                        "endColumn": 60,
+                        "endOffset": 700
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 640,
+                    "endColumn": 56,
+                    "endOffset": 692
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 705,
+                        "endColumn": 56,
+                        "endOffset": 757
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 697,
+                    "endColumn": 60,
+                    "endOffset": 753
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 762,
+                        "endColumn": 60,
+                        "endOffset": 818
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 758,
+                    "endColumn": 50,
+                    "endOffset": 804
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 823,
+                        "endColumn": 50,
+                        "endOffset": 869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 809,
+                    "endColumn": 58,
+                    "endOffset": 863
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 874,
+                        "endColumn": 58,
+                        "endOffset": 928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 868,
+                    "endColumn": 62,
+                    "endOffset": 926
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 933,
+                        "endColumn": 62,
+                        "endOffset": 991
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 931,
+                    "endColumn": 56,
+                    "endOffset": 983
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 996,
+                        "endColumn": 56,
+                        "endOffset": 1048
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 988,
+                    "endColumn": 55,
+                    "endOffset": 1039
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1053,
+                        "endColumn": 55,
+                        "endOffset": 1104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1044,
+                    "endColumn": 51,
+                    "endOffset": 1091
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1109,
+                        "endColumn": 51,
+                        "endOffset": 1156
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1096,
+                    "endColumn": 63,
+                    "endOffset": 1155
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endColumn": 63,
+                        "endOffset": 298
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1160,
+                    "endColumn": 60,
+                    "endOffset": 1216
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 303,
+                        "endColumn": 60,
+                        "endOffset": 359
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1221,
+                    "endColumn": 62,
+                    "endOffset": 1279
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 364,
+                        "endColumn": 62,
+                        "endOffset": 422
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1284,
+                    "endColumn": 58,
+                    "endOffset": 1338
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 427,
+                        "endColumn": 58,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1343,
+                    "endColumn": 74,
+                    "endOffset": 1413
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1161,
+                        "endColumn": 74,
+                        "endOffset": 1231
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1418,
+                    "endColumn": 64,
+                    "endOffset": 1478
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1236,
+                        "endColumn": 64,
+                        "endOffset": 1296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1483,
+                    "endColumn": 66,
+                    "endOffset": 1545
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1301,
+                        "endColumn": 66,
+                        "endOffset": 1363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1550,
+                    "endColumn": 64,
+                    "endOffset": 1610
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-iw-rIL\\values-iw-rIL.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1368,
+                        "endColumn": 64,
+                        "endOffset": 1428
+                    }
+                }
+            }
+        ]
+    }
+]

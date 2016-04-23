@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_logo_paypal.png",
+        "source": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\drawable-xxxhdpi\\bt_logo_paypal.png"
+    },
+    {
+        "merged": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_logo_venmo.png",
+        "source": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\drawable-xxxhdpi\\bt_logo_venmo.png"
+    },
+    {
+        "merged": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_venmo.png",
+        "source": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\drawable-xxxhdpi\\bt_venmo.png"
+    },
+    {
+        "merged": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_android_pay.png",
+        "source": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\drawable-xxxhdpi\\bt_android_pay.png"
+    },
+    {
+        "merged": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_paypal_monogram.png",
+        "source": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\drawable-xxxhdpi\\bt_paypal_monogram.png"
+    }
+]

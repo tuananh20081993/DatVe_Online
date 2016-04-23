@@ -1,0 +1,482 @@
+[
+    {
+        "outputFile": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\values-no\\values-no.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 85,
+                    "endOffset": 136
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 174,
+                        "endColumn": 85,
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 141,
+                    "endColumn": 77,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 260,
+                        "endColumn": 77,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 60,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 60,
+                        "endOffset": 394
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 74,
+                    "endOffset": 350
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 399,
+                        "endColumn": 74,
+                        "endOffset": 469
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 355,
+                    "endColumn": 76,
+                    "endOffset": 427
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 474,
+                        "endColumn": 76,
+                        "endOffset": 546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 432,
+                    "endColumn": 59,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 551,
+                        "endColumn": 59,
+                        "endOffset": 606
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endColumn": 56,
+                    "endOffset": 544
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endColumn": 56,
+                        "endOffset": 229
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 549,
+                    "endColumn": 62,
+                    "endOffset": 607
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 611,
+                        "endColumn": 62,
+                        "endOffset": 669
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 612,
+                    "endColumn": 51,
+                    "endOffset": 659
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 674,
+                        "endColumn": 51,
+                        "endOffset": 721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 664,
+                    "endColumn": 55,
+                    "endOffset": 715
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 726,
+                        "endColumn": 55,
+                        "endOffset": 777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 720,
+                    "endColumn": 59,
+                    "endOffset": 775
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 782,
+                        "endColumn": 59,
+                        "endOffset": 837
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 780,
+                    "endColumn": 49,
+                    "endOffset": 825
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 842,
+                        "endColumn": 49,
+                        "endOffset": 887
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 830,
+                    "endColumn": 57,
+                    "endOffset": 883
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 892,
+                        "endColumn": 57,
+                        "endOffset": 945
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 888,
+                    "endColumn": 63,
+                    "endOffset": 947
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 950,
+                        "endColumn": 63,
+                        "endOffset": 1009
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 952,
+                    "endColumn": 55,
+                    "endOffset": 1003
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1014,
+                        "endColumn": 55,
+                        "endOffset": 1065
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1008,
+                    "endColumn": 54,
+                    "endOffset": 1058
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1070,
+                        "endColumn": 54,
+                        "endOffset": 1120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1063,
+                    "endColumn": 51,
+                    "endOffset": 1110
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1125,
+                        "endColumn": 51,
+                        "endOffset": 1172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1115,
+                    "endColumn": 63,
+                    "endOffset": 1174
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 234,
+                        "endColumn": 63,
+                        "endOffset": 293
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1179,
+                    "endColumn": 48,
+                    "endOffset": 1223
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 298,
+                        "endColumn": 48,
+                        "endOffset": 342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1228,
+                    "endColumn": 59,
+                    "endOffset": 1283
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 347,
+                        "endColumn": 59,
+                        "endOffset": 402
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1288,
+                    "endColumn": 63,
+                    "endOffset": 1347
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 407,
+                        "endColumn": 63,
+                        "endOffset": 466
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1352,
+                    "endColumn": 74,
+                    "endOffset": 1422
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1177,
+                        "endColumn": 74,
+                        "endOffset": 1247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1427,
+                    "endColumn": 74,
+                    "endOffset": 1497
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1252,
+                        "endColumn": 74,
+                        "endOffset": 1322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1502,
+                    "endColumn": 63,
+                    "endOffset": 1561
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1327,
+                        "endColumn": 63,
+                        "endOffset": 1386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1566,
+                    "endColumn": 61,
+                    "endOffset": 1623
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-no\\values-no.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1391,
+                        "endColumn": 61,
+                        "endOffset": 1448
+                    }
+                }
+            }
+        ]
+    }
+]

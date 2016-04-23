@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\mingo\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0_e0707f4722f7d4ef44008d5cd1231e7b8f6ddae3.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.braintreepayments.api\core\2.2.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="ef9d9d6453e179fa3f7b701776fe646a35eb5329">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.braintreepayments.api-core-2.2.5_6c873bc24ae1c7d98980ee19e1c9ce9859b3357d.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="84e284edfd1761762d1a41569cd7a33c01c7c77e">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\instant-run_e61fb427fe32c3cabc86d6c2dba60544f1678339.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.braintreepayments\card-form\2.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="ebabf07c4e399db493d6ac9499ac17b8170f89b5">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.braintreepayments-card-form-2.1.1_9f31956924800c2ab3f3712cfac0c2460af660d9.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.paypal.android.sdk\paypal-one-touch\2.2.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="2548b27f6684e4d6e88a59d8aea004fbb28d8267">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.paypal.android.sdk-paypal-one-touch-2.2.5_b595174920e95103a7c7c7810f89c5eb2cb5efd3.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.braintreepayments.api\braintree\2.2.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="f656072ba81e2dde9dfe7050bb4c9bd7c248fd65">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.braintreepayments.api-braintree-2.2.5_c1db43b20d998533dae422d48641030642978e27.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_6da25d16b037d6c82dfc019f9a18bf0d2743008f.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\.gradle\caches\modules-2\files-2.1\com.paypal.android.sdk\data-collector\2.2.5\c5970e356d69fd18b151cd203978eb11294acd39\data-collector-2.2.5.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="c5970e356d69fd18b151cd203978eb11294acd39">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\data-collector-2.2.5_b0320ac762ee0c1f7e8d45aae2202ae207cc57cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-19.1.0_128dbedb766ff711cf38cad7a60278442c27e5c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.1.0_4a09c31afae9aebdac927761d554de8be2ff6a86.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.1.0_e43a49bed50b53aa800b58d50fd8c9f052ae851f.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="a3e58c9354f62b4fa57ab2e174a5729c6d9c2972">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_9dff8187caf424f93bdebc6eb44ef778702a93b2.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.braintreepayments.api\drop-in\2.2.5\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="157bf2a810f1746bd29373e5b9897474caeea5da">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.braintreepayments.api-drop-in-2.2.5_240f2070917e682909eab4f25e49c3cecaedf6bd.jar" />
+    </item>
+    <item
+        jar="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0 rc3"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\mingo\StudioProjects\DatVe_Online\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.0_2db0e32534590418a7dd1cd9863877e0dcdc0fdf.jar" />
+    </item>
+
+</items>

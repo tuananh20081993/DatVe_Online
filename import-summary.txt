@@ -1,0 +1,140 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitattributes
+* .gitignore
+* ic_launcher-web.png
+* nppBackup\
+* nppBackup\.gitignore.2016-04-15_203701.bak
+* nppBackup\.gitignore.2016-04-15_203724.bak
+* nppBackup\.gitignore.2016-04-15_203726.bak
+* pom.xml
+* proguard-project.txt
+* target\
+* target\classes\
+* target\classes\META-INF\
+* target\classes\META-INF\MANIFEST.MF
+* target\classes\META-INF\maven\
+* target\classes\META-INF\maven\DatVe_Online\
+* target\classes\META-INF\maven\DatVe_Online\DatVe_Online\
+* target\classes\META-INF\maven\DatVe_Online\DatVe_Online\pom.properties
+* target\classes\META-INF\maven\DatVe_Online\DatVe_Online\pom.xml
+* target\classes\com\
+* target\classes\com\datve\
+* target\classes\com\datve\data\
+* target\classes\com\datve\data\parse\
+* target\classes\com\datve\data\parse\chontuyen\
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$1.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$2.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$3.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$4.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$5$1.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity$5.class
+* target\classes\com\datve\data\parse\chontuyen\ChonTuyenActivity.class
+* target\classes\com\datve\data\parse\chontuyen\DiemDenObject.class
+* target\classes\com\datve\data\parse\chontuyen\DiemDiObject.class
+* target\classes\com\datve\data\parse\chontuyen\KhachHang.class
+* target\classes\com\datve\data\parse\chontuyen\Point.class
+* target\classes\com\datve\data\parse\chontuyen\Router.class
+* target\classes\com\datve\data\parse\tuyenxe\
+* target\classes\com\datve\data\parse\tuyenxe\DiemDonObject.class
+* target\classes\com\datve\data\parse\tuyenxe\ThoiGianObject.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity$1.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity$2.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity$3.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity$4.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity$5.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeAtivity.class
+* target\classes\com\datve\data\parse\tuyenxe\TuyenXeObject.class
+* target\classes\com\datve\fragment\
+* target\classes\com\datve\fragment\chonghe\
+* target\classes\com\datve\fragment\chonghe\ChonGheObject.class
+* target\classes\com\datve\fragment\chonghe\FragmentChonGhe.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangDuoi$1.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangDuoi$2.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangDuoi$3.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangDuoi.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangTren$1.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangTren$2.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangTren$3.class
+* target\classes\com\datve\fragment\chonghe\FragmentGheTangTren.class
+* target\classes\com\datve\fragment\chonghe\FragmentTabManager.class
+* target\classes\com\datve\fragment\chonghe\ImageAdapter.class
+* target\classes\com\datve\sqlite\
+* target\classes\com\datve\sqlite\Destination.class
+* target\classes\com\datve\sqlite\SqliteConnector.class
+* target\classes\com\datve_online\
+* target\classes\com\datve_online\MainActivity.class
+* target\classes\com\datve_online\request\
+* target\classes\com\datve_online\request\Request.class
+* target\classes\com\datve_online\request\ThongTinChiTiet$1.class
+* target\classes\com\datve_online\request\ThongTinChiTiet.class
+* target\classes\com\datve_online\request\ThongTinKhachHang$1.class
+* target\classes\com\datve_online\request\ThongTinKhachHang$2.class
+* target\classes\com\datve_online\request\ThongTinKhachHang.class
+* target\classes\com\datve_online\util\
+* target\classes\com\datve_online\util\ArrayAdapter.class
+* target\maven-status\
+* target\maven-status\maven-compiler-plugin\
+* target\maven-status\maven-compiler-plugin\compile\
+* target\maven-status\maven-compiler-plugin\compile\default-compile\
+* target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+* target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:19.1.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* libs\braintree-api-1.0.2.jar => app\libs\braintree-api-1.0.2.jar
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

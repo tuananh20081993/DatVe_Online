@@ -1,0 +1,482 @@
+[
+    {
+        "outputFile": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\res\\merged\\debug\\values-da-rDK\\values-da-rDK.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 79,
+                    "endOffset": 130
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 178,
+                        "endColumn": 79,
+                        "endOffset": 253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 135,
+                    "endColumn": 72,
+                    "endOffset": 203
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 258,
+                        "endColumn": 72,
+                        "endOffset": 326
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 208,
+                    "endColumn": 60,
+                    "endOffset": 264
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 331,
+                        "endColumn": 60,
+                        "endOffset": 387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 269,
+                    "endColumn": 74,
+                    "endOffset": 339
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 392,
+                        "endColumn": 74,
+                        "endOffset": 462
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 344,
+                    "endColumn": 73,
+                    "endOffset": 413
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 467,
+                        "endColumn": 73,
+                        "endOffset": 536
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 418,
+                    "endColumn": 58,
+                    "endOffset": 472
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 541,
+                        "endColumn": 58,
+                        "endOffset": 595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 477,
+                    "endColumn": 55,
+                    "endOffset": 528
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 181,
+                        "endColumn": 55,
+                        "endOffset": 232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 533,
+                    "endColumn": 61,
+                    "endOffset": 590
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 61,
+                        "endOffset": 657
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 595,
+                    "endColumn": 51,
+                    "endOffset": 642
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 662,
+                        "endColumn": 51,
+                        "endOffset": 709
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 647,
+                    "endColumn": 55,
+                    "endOffset": 698
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 714,
+                        "endColumn": 55,
+                        "endOffset": 765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 703,
+                    "endColumn": 59,
+                    "endOffset": 758
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 770,
+                        "endColumn": 59,
+                        "endOffset": 825
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 763,
+                    "endColumn": 49,
+                    "endOffset": 808
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 830,
+                        "endColumn": 49,
+                        "endOffset": 875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 813,
+                    "endColumn": 57,
+                    "endOffset": 866
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 880,
+                        "endColumn": 57,
+                        "endOffset": 933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 871,
+                    "endColumn": 63,
+                    "endOffset": 930
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 938,
+                        "endColumn": 63,
+                        "endOffset": 997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 935,
+                    "endColumn": 55,
+                    "endOffset": 986
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1002,
+                        "endColumn": 55,
+                        "endOffset": 1053
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 991,
+                    "endColumn": 54,
+                    "endOffset": 1041
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1058,
+                        "endColumn": 54,
+                        "endOffset": 1108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1046,
+                    "endColumn": 51,
+                    "endOffset": 1093
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1113,
+                        "endColumn": 51,
+                        "endOffset": 1160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1098,
+                    "endColumn": 63,
+                    "endOffset": 1157
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 237,
+                        "endColumn": 63,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1162,
+                    "endColumn": 57,
+                    "endOffset": 1215
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 57,
+                        "endOffset": 354
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1220,
+                    "endColumn": 62,
+                    "endOffset": 1278
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 359,
+                        "endColumn": 62,
+                        "endOffset": 417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1283,
+                    "endColumn": 63,
+                    "endOffset": 1342
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments\\card-form\\2.1.1\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 422,
+                        "endColumn": 63,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1347,
+                    "endColumn": 71,
+                    "endOffset": 1414
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1165,
+                        "endColumn": 71,
+                        "endOffset": 1232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1419,
+                    "endColumn": 73,
+                    "endOffset": 1488
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1237,
+                        "endColumn": 73,
+                        "endOffset": 1306
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1493,
+                    "endColumn": 63,
+                    "endOffset": 1552
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1311,
+                        "endColumn": 63,
+                        "endOffset": 1370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1557,
+                    "endColumn": 61,
+                    "endOffset": 1614
+                },
+                "from": {
+                    "file": "C:\\Users\\mingo\\StudioProjects\\DatVe_Online\\app\\build\\intermediates\\exploded-aar\\com.braintreepayments.api\\drop-in\\2.2.5\\res\\values-da-rDK\\values-da-rDK.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1375,
+                        "endColumn": 61,
+                        "endOffset": 1432
+                    }
+                }
+            }
+        ]
+    }
+]
