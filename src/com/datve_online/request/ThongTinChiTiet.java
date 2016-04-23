@@ -1,6 +1,8 @@
 package com.datve_online.request;
 
 
+import java.text.BreakIterator;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -9,6 +11,8 @@ import org.json.JSONObject;
 import com.example.datve_online.R;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,6 +24,7 @@ public class ThongTinChiTiet extends Activity
 	private String tuyenobject;
 	private String diemdonobject;
 	private String sogheobject;
+	private Button thanhtoan;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -80,6 +85,17 @@ public class ThongTinChiTiet extends Activity
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		thanhtoan = (Button)findViewById(R.id.button1);
+		thanhtoan.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				//intent myintent = new Intent(ThongTinChiTiet.this, );
+			}
+		});
 	}
 }
 
